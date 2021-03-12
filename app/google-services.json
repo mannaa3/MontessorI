@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "301138307077",
+    "firebase_url": "https://poster-69d52.firebaseio.com",
+    "project_id": "poster-69d52",
+    "storage_bucket": "poster-69d52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301138307077:android:56bcc401e525dde752146c",
+        "android_client_info": {
+          "package_name": "com.example.Montessori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301138307077-n9sp43q1rbn2jrvcmqklq4ds870r6bod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.Montessori",
+            "certificate_hash": "c0c4260836d23b6d848f048c4045b4453e8d74bd"
+          }
+        },
+        {
+          "client_id": "301138307077-qbisqulqqm148h2tqjq2s9jlvtuhu8ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW5wgv4FllivIoywCexd-kXNqbeRz81s4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301138307077-qbisqulqqm148h2tqjq2s9jlvtuhu8ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_test4"
+    tools:context=".Make_UserRecharge">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/activity_make_user_recharge_toolbar"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:layout_below="@+id/activity_make_user_recharge_toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_pic_makerecharge"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:id="@+id/my_profile_full_name_makerecharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_below="@+id/my_profile_pic_makerecharge"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                 android:layout_centerInParent="true"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shadow"
+
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+             android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/mon6"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon6"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon5"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon4"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon4"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon3"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon1"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="4dp"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/mon12"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon12"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon11"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon11"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon10"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon10"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon9"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon9"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon8"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon8"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+            <ImageButton
+                android:id="@+id/mon7"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mon7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+              android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shadow"
+            >
+        <TextView
+            android:id="@+id/mon_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="يرجي اخيار الشهر للدفع"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="15dp"
+              android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shadow"
+            >
+
+
+            <CheckBox
+                android:id="@+id/mon_CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاشتراك الشهري : "
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="viewStart"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/colorPrimaryDark"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="15dp"
+             android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shadow"
+            >
+
+
+            <CheckBox
+                android:id="@+id/mon_bus_CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اشتراك الباص : "
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="viewStart"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/colorPrimaryDark"
+
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+             android:text="حفظ"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_test4"
+    tools:context=".ProfileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                layout="@layout/app_bar_layout"
+                android:id="@+id/activity_profile_toolbar"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_profile_pic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                 android:layout_centerHorizontal="true"
+                android:layout_below="@+id/activity_profile_toolbar"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:id="@+id/my_profile_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_below="@+id/my_profile_pic"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+
+                />
+            <TextView
+                android:id="@+id/my_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:layout_below="@+id/my_profile_full_name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+                />
+            <TextView
+                android:id="@+id/my_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hey there , iam useing social app,develop coding cafe"
+                android:layout_below="@+id/my_username"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+                />
+            <TextView
+                android:id="@+id/my_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_below="@+id/my_profile_status"
+                android:layout_marginTop="60dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+
+                />
+            <TextView
+                android:id="@+id/my_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_below="@+id/my_country"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+                />
+            <TextView
+                android:id="@+id/my_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_below="@+id/my_dob"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+
+                />
+            <TextView
+                android:id="@+id/my_relationship_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relationship status"
+                android:layout_below="@+id/my_gender"
+                android:layout_marginTop="2dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shadow"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

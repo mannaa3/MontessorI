@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/ic_test4"
+    tools:context=".Make_Report">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--   line & Row Start -->
+            <include
+                layout="@layout/app_bar_layout"
+                android:id="@+id/send_report_toolbar"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="4dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/selectuser_profilepic"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/profile"/>
+                <TextView
+                    android:id="@+id/selectuser_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:layout_below="@+id/selectuser_profilepic"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@color/mainBackground"
+                >
+                <EditText
+                    android:id="@+id/yy"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="year"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                     android:inputType="numberDecimal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="30sp"
+                    />
+                <EditText
+                    android:id="@+id/mm"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:hint="mon"
+                    android:inputType="numberDecimal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="30sp"
+                    />
+                <EditText
+                    android:id="@+id/dd"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Day"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:inputType="numberDecimal"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+                <TextView
+                    android:id="@+id/txt_academic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="academic"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center">
+                </TextView>
+                <EditText
+                    android:id="@+id/edi_academic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+
+                    />
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+                <TextView
+                    android:id="@+id/txt_Note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    >
+                </TextView>
+                <EditText
+                    android:id="@+id/edi_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                     />
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                android:buttonTint="@color/colorPrimaryDark"
+
+                >
+
+                 <CheckBox
+                        android:id="@+id/check_manners"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="manners"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="right"
+                     android:background="@drawable/inputs"
+                     android:buttonTint="@color/colorPrimaryDark"
+
+                     />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                 <CheckBox
+                    android:id="@+id/check_mental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mental Activities"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                     android:buttonTint="@color/colorPrimaryDark"
+
+                     />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                 android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                 <CheckBox
+                    android:id="@+id/check_science"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Science Activities"
+
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                     android:buttonTint="@color/colorPrimaryDark"
+
+                     />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_education"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education Songs"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_animals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Animals"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_arts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arts And Cratfs"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_story"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Story"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_maps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End --><!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_planting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planting"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_puzzle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puzzle"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+                <TextView
+                    android:id="@+id/txt_Meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meal"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="center"
+                    >
+                </TextView>
+                <RadioGroup
+                    android:id="@+id/radio_meal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radio_meal_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio_meal_some"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some" />
+                    <RadioButton
+                        android:id="@+id/radio_meal_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+                <TextView
+                    android:id="@+id/txt_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reminder Please send with Your child"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center">
+                </TextView>
+                <EditText
+                    android:id="@+id/edi_reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLines="5"
+
+                    />
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_playful"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playful"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_sleepy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sleepy"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_quite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quite"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <!--   line & Row Start -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:layout_margin="10dp"
+
+
+                android:background="@drawable/shadow"
+                >
+
+                <CheckBox
+                    android:id="@+id/check_rad_not_on_mood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not On Mood"
+                    android:textColor="@color/colorPrimary"
+                     android:layout_gravity="right"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+            <!--   line & Row End -->
+            <Button
+                android:id="@+id/but_send_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
